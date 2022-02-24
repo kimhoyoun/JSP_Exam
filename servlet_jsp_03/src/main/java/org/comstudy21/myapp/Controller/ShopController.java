@@ -1,4 +1,4 @@
-package org.comstudy21.myapp.controller;
+package org.comstudy21.myapp.Controller;
 
 import java.io.IOException;
 import java.util.ArrayList;

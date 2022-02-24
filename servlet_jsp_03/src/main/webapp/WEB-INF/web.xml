@@ -10,15 +10,17 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
+  
+  
   <!-- shop과 member를 Controller와 mapping해줘서 따로 제어하도록 함.-->
   <servlet>
   	<servlet-name>shop</servlet-name>
-  	<servlet-class>org.comstudy21.myapp.controller.ShopController</servlet-class>
+  <servlet-class>org.comstudy21.myapp.Controller.ShopController</servlet-class>
   </servlet>
   
    <servlet>
   	<servlet-name>member</servlet-name>
-  	<servlet-class>org.comstudy21.myapp.controller.MemberController</servlet-class>
+  	<servlet-class>org.comstudy21.myapp.Controller.MemberController</servlet-class>
   </servlet>
   
   <servlet-mapping>
