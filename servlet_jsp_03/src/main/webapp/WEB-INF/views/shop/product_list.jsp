@@ -11,6 +11,12 @@
 <body>
 <h1>상품 리스트</h1>
 
+<%
+if(session.getAttribute("user") == null){
+	out.println("<h3>로그인하세요!</h3>");
+}else{
+%>
+
 <form action="">
 	<table border = "1" width = "500">
 		<tr>
@@ -33,11 +39,12 @@ ArrayList<ProductDto> pList = (ArrayList)request.getAttribute("pList");
 	</tr>
 <%
 }
+}
 %>
 	</table>
 </form>
 
-
+<jsp:include page="/inc/menu.jsp"></jsp:include>
 
 </body>
 </html>

@@ -45,7 +45,6 @@ if(session.getAttribute("user") == null){
 			</table>
 		</fieldset>
 	</form>
-
 <%
 }else{
 	String user = (String)session.getAttribute("user");
@@ -53,5 +52,6 @@ if(session.getAttribute("user") == null){
 	out.println("<li><a href=\"logout.do\">로그아웃</a></li>");
 }
  %>
+ <jsp:include page="/inc/menu.jsp"></jsp:include>
 </body>
 </html>
